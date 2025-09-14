@@ -246,7 +246,7 @@
 
 
 import React, { useState, useEffect, useRef } from "react";
-import UseDebounce from "./components/UseDebounce";
+import useDebounce from "./hooks/UseDebounce";
 import SearchBar from "./components/SearchBar";
 import BookCard from "./components/BookCard";
 import Spinner from "./components/Spinner";
