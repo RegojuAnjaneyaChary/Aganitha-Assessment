@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import useDebounce from "./hooks/UseDebounce";
 
-import SearchBar from "/src/components/SearchBar";
-import BookCard from "/src/components/BookCard";
-import Spinner from "/src/components/Spinner";
+import SearchBar from "/src/components/SearchBar.jsx";
+import BookCard from "/src/components/BookCard.jsx";
+import Spinner from "/src/components/Spinner.jsx";
 
 export default function App() {
   const [query, setQuery] = useState("");
