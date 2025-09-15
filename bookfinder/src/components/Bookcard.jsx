@@ -1,4 +1,5 @@
-export default function BookCard({ book }) {
+import react from "react"
+const function BookCard({ book }) {
   const coverUrl = book.cover_i
     ? `https://covers.openlibrary.org/b/id/${book.cover_i}-L.jpg`
     : "https://via.placeholder.com/240x320?text=No+Cover";
@@ -29,3 +30,6 @@ export default function BookCard({ book }) {
     </a>
   );
 }
+
+
+export default BookCard
