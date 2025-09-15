@@ -246,7 +246,7 @@
 
 
 import React, { useState, useEffect, useRef } from "react";
-import useDebounce from "./hooks/UseDebounce";
+import useDebounce from "./hooks/useDebounce";
 
 // Components (check your filenames in /components folder)
 import SearchBar from "./components/SearchBar";
