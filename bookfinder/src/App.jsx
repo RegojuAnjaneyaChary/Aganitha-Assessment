@@ -246,7 +246,9 @@
 
 
 import React, { useState, useEffect, useRef } from "react";
-import useDebounce from "./hooks/useDebounce";
+import useDebounce from "./hooks/UseDebounce";
+
+// Components (check your filenames in /components folder)
 import SearchBar from "./components/SearchBar";
 import BookCard from "./components/BookCard";
 import Spinner from "./components/Spinner";
