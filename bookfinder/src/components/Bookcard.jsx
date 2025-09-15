@@ -1,4 +1,3 @@
-
 export default function BookCard({ book }) {
   const coverUrl = book.cover_i
     ? `https://covers.openlibrary.org/b/id/${book.cover_i}-L.jpg`
@@ -9,16 +8,22 @@ export default function BookCard({ book }) {
       href={`https://openlibrary.org${book.key}`}
       target="_blank"
       rel="noopener noreferrer"
-      className="block bg-white rounded-xl shadow hover:shadow-lg overflow-hidden"
+      className="block bg-white rounded-2xl shadow-md hover:shadow-xl overflow-hidden transform hover:-translate-y-1 transition"
     >
-      <img src={coverUrl} alt={book.title} className="w-full h-52 object-cover" />
+      <img
+        src={coverUrl}
+        alt={book.title}
+        className="w-full h-60 object-cover"
+      />
       <div className="p-4">
-        <h3 className="font-semibold text-lg">{book.title}</h3>
-        <p className="text-sm text-gray-600 mt-1">
+        <h3 className="font-semibold text-lg text-gray-800 line-clamp-2">
+          {book.title}
+        </h3>
+        <p className="text-sm text-gray-600 mt-2 line-clamp-1">
           {book.author_name ? book.author_name.join(", ") : "Unknown author"}
         </p>
         <p className="text-xs text-gray-500 mt-1">
-          First published: {book.first_publish_year || "N/A"}
+          📖 First published: {book.first_publish_year || "N/A"}
         </p>
       </div>
     </a>
